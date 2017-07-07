@@ -11,11 +11,11 @@ try
     
     % Create and configure the runner
     runner = TestRunner.withTextOutput();
-    runner.addPlugin(TAPPlugin.producingVersion13(ToFile(tapResultsFile)));
+    runner.addPlugin(TAPPlugin.producingOriginalFormat(ToFile(tapResultsFile)));
 		
 	% Run tests
-    results = runner.run(suite);
-    display(results);
+    results = runner.run(suite)
+    display(results)
 catch e
     disp(getReport(e, 'extended'));
 end
