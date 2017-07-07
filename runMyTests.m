@@ -5,7 +5,7 @@ jenkins_workspace = getenv('WORKSPACE');
 try
     % Create testsuite from all test files in Jenkins workspace 
     % picked up from the SCM repository
-    suite = testsuite();
+    suite = testsuite()
     
     tapResultsFile = fullfile(jenkins_workspace, 'TAPResults.tap');
     
