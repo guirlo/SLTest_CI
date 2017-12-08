@@ -7,6 +7,7 @@ try
     % picked up from the SCM repository
     suite = testsuite()
     
+    
     tapResultsFile = fullfile(jenkins_workspace, 'TAPResults.tap');
     
     % Create and configure the runner
